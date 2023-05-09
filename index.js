@@ -52,6 +52,9 @@ app.post('/chocolates',async(req,res)=>{
     const result=await chocolateCollection.insertOne(newChocolate)
     res.send(result)
 })
+
+
+
 app.put('/chocolates/:id',async(req, res) => {
   const id=req.params.id;
   console.log(id)
